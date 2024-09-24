@@ -4,19 +4,22 @@ import 'package:elevateapp/core/theming/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import '../../data/models/product_model.dart';
 import 'add_to_cart_circle.dart';
 import 'add_to_favourites_circle.dart';
 
 class ProductCard extends StatelessWidget {
   const ProductCard({
     super.key,
+    required this.productModel,
   });
+  final ProductModel productModel;
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
         Card(
-          color: Colors.white,
+          color:AppColors.mainWhite,
           elevation: 4,
           shape: RoundedRectangleBorder(
             side: const BorderSide(width: 2, color: Colors.blue),
@@ -29,7 +32,7 @@ class ProductCard extends StatelessWidget {
                       topLeft: Radius.circular(8),
                       topRight: Radius.circular(8)),
                   child: CachedNetworkImage(
-                    imageUrl: 'https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg',
+                    imageUrl: productModel.imageUrl!,
                     height: 110.h,
                     width: double.infinity,
                     fit: BoxFit.contain,
@@ -43,20 +46,20 @@ class ProductCard extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      'productModel',
+                      productModel.title,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: AppTextStyles.textBlack(16, FontWeight.w700),
                     ),
                     Text(
-                      'productModel productModel',
+                      productModel.desc!,
                       style: AppTextStyles.textBlack(15, FontWeight.w600),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
                     verticalSpace(3),
                     Text(
-                      '199',
+                      '${productModel.price} EGB',
                       style: AppTextStyles.textBlack(13, FontWeight.w400),
                     ),
                     verticalSpace(3),
@@ -68,7 +71,7 @@ class ProductCard extends StatelessWidget {
                             Text('Review ',
                                 style: AppTextStyles.textBlack(
                                     12, FontWeight.w400)),
-                            Text('(222)',
+                            Text('(${productModel.ratingModel!.rate})',
                                 style: AppTextStyles.textBlack(
                                     12, FontWeight.w400)),
                             Icon(

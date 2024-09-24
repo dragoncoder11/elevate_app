@@ -14,14 +14,25 @@ dependencies:
 
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  # make app responsive
   flutter_screenutil: ^5.9.3
+  # add native splash in the openning of the app
   flutter_native_splash: ^2.0.2
+  # change app logo
   flutter_launcher_icons: ^0.13.1
-  dio: ^5.7.0
-  font_awesome_flutter: ^10.7.0
-  cached_network_image: ^3.4.1
+  # loading shape
   skeletonizer: ^1.4.2
+  # state management
   flutter_bloc: ^8.1.6
+  # use it to get data from the api
+  dio: ^5.7.0
+  dartz: ^0.10.1
+  # app icons
+  font_awesome_flutter: ^10.7.0
+  # get image and loading placeholder of it
+  cached_network_image: ^3.4.1
+  # for dependency injection
+  get_it: ^8.0.0
 
 dev_dependencies:
   flutter_test:
