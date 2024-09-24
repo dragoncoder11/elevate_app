@@ -44,7 +44,7 @@ class SkeleProduct extends StatelessWidget {
                       style:AppTextStyles.textBlack(16, FontWeight.w700),
                     ),
                     Text(
-                      'productModel productModel!.desc!',
+                      'productModel productModel! ',
                       style:AppTextStyles.textBlack(15, FontWeight.w600),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,

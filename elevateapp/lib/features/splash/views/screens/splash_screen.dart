@@ -71,7 +71,6 @@ class _SplashScreenState extends State<SplashScreen>
       body: Stack(
         alignment: Alignment.center,
         children: [
-         
           AnimatedSplashImage(imageFadeAnimation: _imageFadeAnimation),
            AnimatedSplashText(
               textTop: textTop, textFadeAnimation: _textFadeAnimation),

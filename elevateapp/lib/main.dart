@@ -1,4 +1,4 @@
-import 'package:elevateapp/core/di/dependency_injection.dart';
+import 'package:elevateapp/core/dependency_injection/dependency_injection.dart';
 import 'package:elevateapp/store.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

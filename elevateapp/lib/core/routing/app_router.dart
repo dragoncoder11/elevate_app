@@ -1,4 +1,4 @@
-import 'package:elevateapp/core/di/dependency_injection.dart';
+import 'package:elevateapp/core/dependency_injection/dependency_injection.dart';
 import 'package:elevateapp/core/routing/routes.dart';
 import 'package:elevateapp/features/home/data/repos/product_repo_implement.dart';
 import 'package:elevateapp/features/home/logic/product_cubit/product_cubit.dart';

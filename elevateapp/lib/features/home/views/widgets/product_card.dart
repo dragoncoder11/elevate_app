@@ -19,7 +19,7 @@ class ProductCard extends StatelessWidget {
     return Stack(
       children: [
         Card(
-          color: Colors.white,
+          color:AppColors.mainWhite,
           elevation: 4,
           shape: RoundedRectangleBorder(
             side: const BorderSide(width: 2, color: Colors.blue),
