@@ -27,6 +27,7 @@ class ProductCard extends StatelessWidget {
           ),
           child: Column(
             children: [
+              verticalSpace(5),
               ClipRRect(
                   borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(8),
