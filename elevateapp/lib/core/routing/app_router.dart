@@ -1,7 +1,7 @@
 import 'package:elevateapp/core/routing/routes.dart';
 import 'package:flutter/material.dart';
+import '../../features/home/views/screens/home_page.dart';
 import '../../features/splash/views/screens/splash_screen.dart';
-import '../../home.dart';
 
 class AppRouter {
   Route? generateRoute(RouteSettings settings) {
