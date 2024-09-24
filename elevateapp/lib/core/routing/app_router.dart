@@ -1,4 +1,6 @@
+import 'package:elevateapp/core/di/dependency_injection.dart';
 import 'package:elevateapp/core/routing/routes.dart';
+import 'package:elevateapp/features/home/data/repos/product_repo_implement.dart';
 import 'package:elevateapp/features/home/logic/product_cubit/product_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -11,7 +13,7 @@ class AppRouter {
       case Routes.homeRoute:
         return MaterialPageRoute(builder: (context) {
           return BlocProvider(
-            create: (context) => ProductCubit()..fetchProducts(),
+            create: (context) => ProductCubit(locator<ProductRepoImplement>())..fetchProducts(),
             child: const HomePage(),
           );
           

@@ -4,7 +4,7 @@ flutter_native_splash:
   android_12:
     icon_background_color: "#FFFFFF"
     image: assets/Frame2.png 
-    image_dark: assets/Frame2.png
+   # image_dark: assets/Frame2.png
     icon_background_color_dark: "#FFFFFF"
     
 

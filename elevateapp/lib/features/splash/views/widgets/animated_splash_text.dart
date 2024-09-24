@@ -14,7 +14,7 @@ class AnimatedSplashText extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedPositioned(
       duration: const Duration(seconds: 2),
-      curve: Curves.easeInOut,
+      curve: Curves.fastEaseInToSlowEaseOut,
       top: textTop,
       child: FadeTransition(
         opacity: _textFadeAnimation,

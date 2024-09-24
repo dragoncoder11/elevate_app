@@ -3,14 +3,13 @@ import 'package:dio/dio.dart';
 import 'package:elevateapp/core/failure/failure.dart';
 import 'package:elevateapp/features/home/data/repos/product_repo_implement.dart';
 import 'package:meta/meta.dart';
-
 import '../../data/models/product_model.dart';
 part 'product_state.dart';
 
 class ProductCubit extends Cubit<ProductState> {
-  ProductCubit() : super(ProductInitial());
+  ProductCubit(this.productRepoImpl) : super(ProductInitial());
   
-  ProductRepoImplement productRepoImpl = ProductRepoImplement();
+ final ProductRepoImplement productRepoImpl ;
 
   fetchProducts() async {
     emit(ProductLoadingState());

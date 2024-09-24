@@ -6,8 +6,10 @@ import '../services/product_service.dart';
 import 'product_repo.dart';
 
 class ProductRepoImplement implements ProductRepo {
-  ProductService productService = ProductService(dio: Dio());
+ final ProductService productService ;
   List<ProductModel> products = [];
+
+  ProductRepoImplement({required this.productService});
   @override
   Future<Either<ServerFailure, List<ProductModel>>> fetchProducts() async {
     try {
