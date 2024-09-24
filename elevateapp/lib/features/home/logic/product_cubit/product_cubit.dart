@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:dio/dio.dart';
-import 'package:elevateapp/core/failure/failure.dart';
+import 'package:elevateapp/core/error/failure.dart';
 import 'package:elevateapp/features/home/data/repos/product_repo_implement.dart';
 import 'package:meta/meta.dart';
 import '../../data/models/product_model.dart';
