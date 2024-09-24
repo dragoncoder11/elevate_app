@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:elevateapp/core/failure/failure.dart';
+import 'package:elevateapp/core/error/failure.dart';
 import '../../../../core/helper/app_constants.dart';
 
 class ProductService {
