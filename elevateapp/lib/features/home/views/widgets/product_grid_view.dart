@@ -49,7 +49,7 @@ class ProductsGridView extends StatelessWidget {
                   crossAxisCount: 2,
                   mainAxisSpacing: 12,
                   crossAxisSpacing: 12,
-                  mainAxisExtent: 245.h),
+                  mainAxisExtent: 247.h),
               itemBuilder: (context, index) {
                 return ProductCard(productModel: state.products[index],);
               });
